@@ -22,7 +22,7 @@ and write short notes or tips about how LLMs actually help (or don’t).
 %}
 
 {% for p in en_logs %}
-- {{ p.date | date: "%Y-%m-%d" }} — [{{ p.title }}]({{ p.url }})
+- {{ p.date | date: "%Y-%m-%d" }} — [{{ p.title }}]({{ p.url | relative_url }})
 {% endfor %}
 
 ---
@@ -37,7 +37,7 @@ and write short notes or tips about how LLMs actually help (or don’t).
 %}
 
 {% for p in en_syn %}
-- {{ p.date | date: "%Y-%m-%d" }} — [{{ p.title }}]({{ p.url }})
+- {{ p.date | date: "%Y-%m-%d" }} — [{{ p.title }}]({{ p.url | relative_url }})
 {% endfor %}
 
 ---
@@ -52,7 +52,7 @@ and write short notes or tips about how LLMs actually help (or don’t).
 %}
 
 {% for p in fr_logs %}
-- {{ p.date | date: "%Y-%m-%d" }} — [{{ p.title }}]({{ p.url }})
+- {{ p.date | date: "%Y-%m-%d" }} — [{{ p.title }}]({{ p.url | relative_url }})
 {% endfor %}
 
 ---
@@ -67,5 +67,5 @@ and write short notes or tips about how LLMs actually help (or don’t).
 %}
 
 {% for p in fr_syn %}
-- {{ p.date | date: "%Y-%m-%d" }} — [{{ p.title }}]({{ p.url }})
+- {{ p.date | date: "%Y-%m-%d" }} — [{{ p.title }}]({{ p.url | relative_url }})
 {% endfor %}
