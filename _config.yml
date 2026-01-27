@@ -1,3 +1,5 @@
 title: Learning Logs with LLM
 markdown: kramdown
 permalink: pretty
+plugins:
+  - jekyll-sitemap
