@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Language Learning Logs with LLM
 ---
 
