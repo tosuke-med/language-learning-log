@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tosuke-med.github.io/language-learning-log/sitemap.xml
