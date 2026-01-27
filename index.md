@@ -1,14 +1,3 @@
-<meta name="google-site-verification" content="WPNKu0k5OKjRmuOBG5kQjRNYozTsw4Yqmqq0aZ7RDM4" />
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V31KF2VBF0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXX');
-</script>
-
 ---
 title: Language Learning Logs with LLM
 ---
