@@ -1,6 +1,6 @@
 ---
 title: selective substitution for practicing outputs
-date: 2026-01-28
+date: 2026-01-29
 language: fr
 tags: [writing, speaking]
 ---
