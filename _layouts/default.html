@@ -16,10 +16,88 @@
   </script>
 
   <title>{{ page.title | default: "Language Learning Log" }}</title>
+
+  <style>
+    /* Code block container */
+    .code-wrapper {
+      position: relative;
+    }
+
+    /* Copy button */
+    .copy-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      padding: 4px 10px;
+      font-size: 12px;
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .code-wrapper:hover .copy-btn {
+      opacity: 1;
+    }
+
+    .copy-btn:hover {
+      background: #e0e0e0;
+    }
+
+    .copy-btn.copied {
+      background: #4caf50;
+      color: white;
+      border-color: #4caf50;
+    }
+
+    /* Ensure pre has relative positioning for button placement */
+    pre {
+      position: relative;
+      padding-top: 2.5em;
+    }
+  </style>
 </head>
 
 <body>
   <h1>{{ page.title }}</h1>
   {{ content }}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Find all <pre> elements (code blocks)
+      const codeBlocks = document.querySelectorAll('pre');
+
+      codeBlocks.forEach(function(pre) {
+        // Wrap pre in a container
+        const wrapper = document.createElement('div');
+        wrapper.className = 'code-wrapper';
+        pre.parentNode.insertBefore(wrapper, pre);
+        wrapper.appendChild(pre);
+
+        // Create copy button
+        const btn = document.createElement('button');
+        btn.className = 'copy-btn';
+        btn.textContent = 'Copy';
+        wrapper.appendChild(btn);
+
+        // Copy functionality
+        btn.addEventListener('click', function() {
+          const code = pre.querySelector('code');
+          const text = code ? code.textContent : pre.textContent;
+
+          navigator.clipboard.writeText(text).then(function() {
+            btn.textContent = 'Copied!';
+            btn.classList.add('copied');
+            setTimeout(function() {
+              btn.textContent = 'Copy';
+              btn.classList.remove('copied');
+            }, 2000);
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
