@@ -5,7 +5,7 @@ language: en
 tags: [prompts, speaking, writing, LLM]
 ---
 
-This page summarizes the prompts and techniques for practicing English output using Large Language Models (LLMs), based on my learning logs.
+This page summarizes the prompts and techniques for practicing English output using Large Language Models (LLMs), based on my learning logs from January 2026 to February 2026.
 
 ## The Challenge
 
