@@ -11,6 +11,8 @@ to rewrite, summarize, and notice patterns — not to collect or memorize expres
 From time to time, I summarize accumulated logs using LLMs
 and write short notes or tips about how LLMs actually help (or don’t).
 
+→ [How to use this log / ログの使い方]({{ "/readme/" | relative_url }})
+
 ---
 
 ## English — Logs
